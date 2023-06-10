@@ -240,9 +240,25 @@ footer span {
   }
   /* article end */
 
-  /* aside start */
-  aside {
+  /* main end */
+
+  /* footer start */
+
+  footer {
+    padding: 0.3rem 0.7rem;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+  /* footer end */
+}
+
+@media screen and (max-width: 768px) {
+  main {
     display: block;
+  }
+
+  aside {
     margin-top: 0;
     margin-bottom: 1rem;
   }
@@ -268,17 +284,4 @@ footer span {
     margin-left: 1rem;
     font-size: 0.7rem;
   }
-  /* aside end */
-
-  /* main end */
-
-  /* footer start */
-
-  footer {
-    padding: 0.3rem 0.7rem;
-  }
-  footer p {
-    font-size: 0.5rem;
-  }
-  /* footer end */
 }
