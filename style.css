@@ -183,3 +183,102 @@ footer span {
   color: #fff;
 }
 /* footer end */
+
+@media screen and (max-width: 576px) {
+  body {
+    margin: 0 12px;
+  }
+  /* header start */
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  nav,
+  .login {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  /* header end */
+
+  /* main start */
+  main {
+    display: block;
+  }
+
+  /* article start */
+  article .top h1 {
+    font-size: 1rem;
+  }
+
+  article .top p {
+    font-size: 0.7rem;
+    padding: 1rem 0;
+  }
+
+  article .container {
+    padding: 0;
+  }
+
+  .card h2 {
+    font-size: 0.8rem;
+  }
+
+  .card .image {
+    height: 200px;
+  }
+
+  .card p {
+    font-size: 0.5rem;
+  }
+
+  .card .description p {
+    font-size: 0.7rem;
+  }
+  /* article end */
+
+  /* aside start */
+  aside {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  aside h2 {
+    font-size: 0.7rem;
+  }
+
+  aside .picture {
+    margin: 0;
+    margin-top: 0.5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  aside .profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  aside .profile p {
+    margin-left: 1rem;
+    font-size: 0.7rem;
+  }
+  /* aside end */
+
+  /* main end */
+
+  /* footer start */
+
+  footer {
+    padding: 0.3rem 0.7rem;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+  /* footer end */
+}
