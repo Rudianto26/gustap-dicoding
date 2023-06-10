@@ -73,6 +73,20 @@ main {
   background-color: #fefefe;
 }
 
+/* hero section start */
+#hero .image {
+  width: 100%;
+  height: 400px;
+  padding: 0 2rem 1rem;
+}
+
+#hero .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* hero section end */
+
 /* article start */
 article {
   flex-basis: 80%;
@@ -137,7 +151,7 @@ article .container {
 
 /* Aside start */
 aside {
-  margin-top: 7vh;
+  margin-top: 80px;
   flex-basis: 20%;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -169,6 +183,185 @@ aside .picture img {
 
 /* Main end */
 
+/* about section start */
+#about h2 {
+  padding-top: 6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+#about .image {
+  width: 95%;
+  height: 400px;
+  margin-bottom: 1rem;
+}
+
+#about .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about .description {
+  padding: 0.7rem 2rem;
+}
+
+#about .description {
+  text-indent: 1.5rem;
+}
+/* about section end */
+
+/* service section start */
+#service {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+#service h2 {
+  margin-bottom: 1rem;
+}
+
+#service .container {
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-image: url(https://images.unsplash.com/photo-1572675339312-3e8b094a544d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.services h3,
+.keunggulan h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.services p {
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.services p:hover {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.services {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.keunggulan .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keunggulan .card {
+  background: rgba(255, 255, 255, 0.7);
+  flex-basis: 23%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+}
+
+.keunggulan .card h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.keunggulan .card p {
+  padding: 0 1rem;
+  text-align: center;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.keunggulan .card:hover {
+  background: #fff;
+}
+
+/* service section end */
+
+/* contact section start */
+#contact {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+#contact h1 {
+  margin-bottom: 1rem;
+}
+
+#contact .container {
+  border-radius: 15px;
+  display: flex;
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact .container .image {
+  width: 50%;
+  padding: 1rem;
+}
+
+#contact .container .image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#contact div {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#contact form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#contact input {
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact .textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .textarea textarea {
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* contact section end */
+
 /* footer start */
 footer {
   text-align: center;
@@ -183,6 +376,19 @@ footer span {
   color: #fff;
 }
 /* footer end */
+
+button {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: skyblue;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: blue;
+}
 
 @media screen and (max-width: 576px) {
   body {
@@ -283,5 +489,71 @@ footer span {
   aside .profile p {
     margin-left: 1rem;
     font-size: 0.7rem;
+  }
+
+  #about h2 {
+    padding-top: 2rem;
+  }
+
+  #about .image {
+    height: 200px;
+  }
+
+  #about .description {
+    text-align: justify;
+    padding: 0;
+  }
+
+  #hero .image {
+    height: 100px;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  #service {
+    padding-top: 2rem;
+  }
+
+  #service .cards {
+    display: block;
+  }
+
+  .services h3,
+  .keunggulan h3 {
+    font-size: 1.5rem;
+  }
+
+  .keunggulan .card {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .keunggulan .card h5,
+  .keunggulan .card p {
+    font-size: 0.7rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+
+  #contact .container {
+    display: block;
+  }
+
+  #contact .container .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  #contact .container form {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #contact .container form label,
+  #contact .container form input {
+    font-size: 0.8rem;
+    padding: 0;
   }
 }
