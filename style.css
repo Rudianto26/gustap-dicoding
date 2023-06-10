@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 5%;
+  background-color: #fcfcfc;
+}
+
+/* Header start */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 2px 5px 1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.login {
+  padding: 0.5rem 1rem;
+  background-color: skyblue;
+  color: #fff;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem 1rem;
+}
+
+a:hover {
+  background-color: skyblue;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.login:hover {
+  background-color: blue;
+}
+/* Header end */
+
+/* Main start */
+main {
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  background-color: #fefefe;
+}
+
+/* article start */
+article {
+  flex-basis: 80%;
+}
+
+article .top h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+article .top p {
+  padding: 1rem 2rem;
+  text-indent: 1.5rem;
+  text-align: justify;
+}
+
+article .container {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card .image {
+  width: 100%;
+  height: 500px;
+}
+
+.card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 0.7rem;
+  text-align: right;
+  font-style: italic;
+}
+
+.card .description p {
+  text-indent: 1.5rem;
+  padding: 1.5rem 0.5rem;
+  letter-spacing: 0.2px;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: justify;
+}
+/* article end */
+
+/* Aside start */
+aside {
+  margin-top: 7vh;
+  flex-basis: 20%;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: max-content;
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+aside h2 {
+  font-size: 1.3rem;
+}
+
+aside .picture {
+  margin: auto;
+  margin-top: 1rem;
+  width: 150px;
+  height: 150px;
+  background-color: #aeaeae;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+aside .picture img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* Aside end */
+
+/* Main end */
+
+/* footer start */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: skyblue;
+  border-top: 1px solid #aeaeae;
+  color: #fff;
+}
+
+footer span {
+  font-weight: 600;
+  color: #fff;
+}
+/* footer end */
